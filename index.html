@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Feed | ASKfm</title>
+    <link rel="stylesheet" href="css/tailwind.min.css" />
+    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="bg-blue-darker">
+
+    <!-- start of header -->
+
+    <header class="border-b border-blue-darkest">
+        <div class="container mx-auto flex flex-wrap py-2">
+            <div class="w-1/2">
+                <h2 class="text-blue-dark">ASKfm</h2>
+            </div>
+            <div class="w-1/2">
+                <ul class="list-reset text-grey-dark float-right">
+                    <div class="clearfix"></div> <!-- fix float -->
+                    <li class="float-left px-4 text-2xl"><i class="fa fa-home"></i></li>
+                    <li class="float-left px-4 text-2xl"><i class="fa fa-info"></i></li>
+                    <li class="float-left px-4 text-2xl"><i class="fa fa-user"></i></li>
+                    <li class="float-left px-4 text-2xl"><i class="fa fa-users"></i></li>
+                    <li class="float-left px-4 text-2xl"><i class="fa fa-bomb"></i></li>
+                    <li class="float-left px-4 text-2xl"><i class="fa fa-cog"></i></li>
+                    <li class="float-left px-4 text-2xl bg-blue-dark px-4 py-0 float-right text-white rounded"><i class="fa fa-plus"></i></li>
+                    <div class="clearfix"></div> <!-- fix float -->
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- end of header -->
+
+    <!-- start of home -->
+
+    <section id="home" class="container mx-auto">
+        <div class="flex flex-wrap">
+            <div id="activity" class="w-2/3">
+                <div class="bg-blue-darkest text-grey p-4 my-4 rounded-lg">
+                    <h4 class="float-left"><i class="fa fa-comment-alt pr-2"></i>Question</h4>
+                    <h4 class="float-left"><i class="fa fa-heart px-2"></i>Photo poll</h4>
+                    <h4 class="float-left"><i class="fa fa-bell px-2"></i>Shortout</h4>
+                    <div class="clearfix"></div> <!-- fix float -->
+                    <input id="wall_data" type="text" placeholder="What, when, why... ask" class="px-2 py-4 my-4 border border-grey rounded w-full">
+                    <div class="inline-block py-4">
+                        <span>Ask</span>
+                    </div>
+                    <div id="publish_btn" class="bg-blue-dark px-20 py-4 float-right text-white rounded hover:bg-blue">
+                        <i class="fab fa-telegram-plane fa-2x"></i>
+                    </div>
+                    <div class="clearfix"></div> <!-- fix float -->
+                </div>
+                <!-- Wall -->
+                <div class="bg-blue-light">
+                    <h2 class="text-center px-8 py-2 bg-white text-grey-darker border-b-8 border-blue-dark">Wall</h2>
+                    <!-- Time Line -->
+                    <div id="wall">
+                        <div id="holding" class="data bg-white p-4 mb-2">
+                            <h2 class="py-8 text-grey-darkest">Web development</h2>
+                            <div class="round inline-block">
+                                <img src="img/p1.jpg" alt="p1">
+                            </div>
+                            <div id="wall_data" class="inline-block px-8 relative">
+                                <h4 class="text-grey text-sm">
+                                    sara sayed
+                                    <span class="px-2 text-2xl">.</span>
+                                    <span id="time_change">about 1 hour</span>
+                                </h4>
+                            </div>
+                            <p class="text-lg text-grey-dark leading-normal">I have seen enough for one life, i have lived my life as best as could. can i have the bill please? He who was scored the first goal.</p>
+                            <div class="flex flex-wrap text-grey py-4 border-b border-grey-dark">
+                                <div class="w-2/3">
+                                    <i class="fa fa-heart fa-2x"></i>
+                                </div>
+                                <div class="w-1/3 text-right">
+                                    <i class="fab fa-telegram-plane fa-2x px-2 pb-2"></i>
+                                    <i class="fa fa-comment-dots fa-2x px-2 pb-2"></i>
+                                    <i id="rot" class="fa fa-exchange-alt fa-2x px-2"></i>
+                                    <i class="fa fa-ellipsis-h fa-2x px-2"></i>
+                                </div>
+                            </div>
+                            <p class="py-4 text-lg text-grey-dark leading-normal"><span class="text-blue-dark">+1 answer in:</span>Where are they eating?</p>
+                        </div>
+                    </div>
+                    <!-- Time Line -->
+                </div>
+            </div>
+            <div id="list_friends" class="w-1/3 px-4 my-4">
+                <h2 class="text-grey">Your friends</h2>
+                <ul id="friends_rounded" class="list-reset py-4">
+                    <li class="relative border-b border-grey-darker py-2">
+                        <div class="round inline-block">
+                            <img src="img/p1.jpg" alt="p1">
+                        </div>
+                        <div id="friend_name" class="inline-block absolute px-2">
+                            <h4 class="text-grey-dark">maged sayed</h4>
+                            <p class="text-xs text-grey-darker">&#64;mmmthy</p>
+                        </div>
+                        <a href="#" class="float-right py-4 no-underline text-blue-dark font-bold">Ask <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li class="relative border-b border-grey-darker py-2">
+                        <div class="round inline-block">
+                            <img src="img/kaka.jpg" alt="p1">
+                        </div>
+                        <div id="friend_name" class="inline-block absolute px-2">
+                            <h4 class="text-grey-dark">jody sayed</h4>
+                            <p class="text-xs text-grey-darker">&#64;mmmthy</p>
+                        </div>
+                        <a href="#" class="float-right py-4 no-underline text-blue-dark font-bold">Ask <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li class="relative border-b border-grey-darker py-2">
+                        <div class="round inline-block">
+                            <img src="img/p1.jpg" alt="p1">
+                        </div>
+                        <div id="friend_name" class="inline-block absolute px-2">
+                            <h4 class="text-grey-dark">sara sayed</h4>
+                            <p class="text-xs text-grey-darker">&#64;mmmthy</p>
+                        </div>
+                        <a href="#" class="float-right py-4 no-underline text-blue-dark font-bold">Ask <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li class="relative border-b border-grey-darker py-2">
+                        <div class="round inline-block">
+                            <img src="img/p1.jpg" alt="p1">
+                        </div>
+                        <div id="friend_name" class="inline-block absolute px-2">
+                            <h4 class="text-grey-dark">mo sayed</h4>
+                            <p class="text-xs text-grey-darker">&#64;mmmthy</p>
+                        </div>
+                        <a href="#" class="float-right py-4 no-underline text-blue-dark font-bold">Ask <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li class="relative border-b border-grey-darker py-2">
+                        <div class="round inline-block">
+                            <img src="img/p1.jpg" alt="p1">
+                        </div>
+                        <div id="friend_name" class="inline-block absolute px-2">
+                            <h4 class="text-grey-dark">sara sayed</h4>
+                            <p class="text-xs text-grey-darker">&#64;mmmthy</p>
+                        </div>
+                        <a href="#" class="float-right py-4 no-underline text-blue-dark font-bold">Ask <i class="fas fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li class="py-2 text-sm">
+                        <a href="#" class="py-4 no-underline text-blue-dark font-bold">See all friends</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- end of home -->
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/coding.js"></script>
+</body>
+
+</html>

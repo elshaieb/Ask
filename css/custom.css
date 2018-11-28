@@ -1,0 +1,40 @@
+body {
+    background-color: #1C3D5A;
+    perspective: 2000px
+}
+
+header {
+    background-image: linear-gradient(#12283A, #1C3D5A);
+}
+
+input {
+    outline: none
+}
+
+i:hover {
+    cursor: pointer
+}
+
+#publish_btn {
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#friends_rounded .round img,
+#wall img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%
+}
+
+#friends_rounded #friend_name {
+    top: 10px
+}
+
+#wall #wall_data {
+    bottom: 16px
+}
+
+#rot {
+    transform: rotate(45deg)
+}
